@@ -17,6 +17,8 @@ o	Resistors (330Ω)
 o	Seven Segment Display to Port P2 of the microcontroller.
 o	Power (VCC & GND) and appropriate resistors.
 4.	Save the design and proceed to programming in Keil.
+5.	<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/186b94bb-c7e5-4723-a077-856e0355de1b" />
+
 
 ## Algorithm:
 1.	Load DPTR with the address of the lookup table containing seven-segment hex values.
@@ -41,10 +43,41 @@ o	Power (VCC & GND) and appropriate resistors.
 3.	Run the simulation and observe the digits 0 to 9 appearing sequentially.
 
 ## Program:
+```
+ORG 0000H
+	UP: MOV P2, #0C0H
+	ACALL DELAY
+	MOV P2, #0F9H
+	ACALL DELAY
+	MOV P2, #0A4H
+	ACALL DELAY
+	MOV P2, #0B0H
+	ACALL DELAY
+	MOV P2, # 99H
+	ACALL DELAY
+	MOV P2, # 92H
+	ACALL DELAY
+	MOV P2, # 82H
+	ACALL DELAY
+	MOV P2, #0F8H
+	ACALL DELAY
+	MOV P2, #80H 
+	ACALL DELAY
+	MOV P2, #90H
+	ACALL DELAY
 
-
+DELAY: MOV R5, #10
+	H1: MOV R4, #180
+	H2: MOV R3, #255
+	H3:DJNZ R3,H3
+	DJNZ R4,H2
+	DJNZ R5,H1
+	RET
+	END
+```
 ## Output:
-
+<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/7b093e0e-c4ca-4a59-b751-5a74fc55ecf3" />
+<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/59e2525d-0f08-4226-b7c6-ca8e99ccf0fa" />
 
 ## Result:
 The seven-segment display has been successfully interfaced with the 8051 microcontroller, and the digits 0 to 9 are displayed sequentially using Keil and Proteus.
