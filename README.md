@@ -62,6 +62,7 @@ DELAY: MOV R5, #10
 ## Output:
 <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/7b093e0e-c4ca-4a59-b751-5a74fc55ecf3" />
 <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/59e2525d-0f08-4226-b7c6-ca8e99ccf0fa" />
+
 ## Result:
 The seven-segment display has been successfully interfaced with the 8051 microcontroller, and the digits 0 to 9 are displayed sequentially using Keil and Proteus.
 
