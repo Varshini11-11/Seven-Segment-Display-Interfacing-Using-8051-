@@ -4,16 +4,6 @@ To interface a seven-segment display with the 8051 microcontroller and display d
 ## Apparatus Required:
 •	Laptop with Keil uVision software
 •	Proteus Design Suite
- ## Circuit Diagram Setup in Proteus:
-1.	Open Proteus and create a new project.
-2.	Add the following components from the library:
-o	8051 Microcontroller (AT89C51)
-o	Seven Segment Display (Common Anode/Cathode)
-o	Resistors (330Ω)
-3.	Connect:
-o	Seven Segment Display to Port P2 of the microcontroller.
-o	Power (VCC & GND) and appropriate resistors.
-4.	Save the design and proceed to programming in Keil.
 ## circuit diagram :
 6.	<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/186b94bb-c7e5-4723-a077-856e0355de1b" />
 ## Algorithm:
