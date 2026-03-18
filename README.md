@@ -1,4 +1,5 @@
 # Seven-Segment-Display-Interfacing-Using-8051
+
 ## Aim:
 To interface a seven-segment display with the 8051 microcontroller and display digits 0 to 9 sequentially using an assembly language program in Keil and simulate it in Proteus.
 ## Apparatus Required:
@@ -48,6 +49,7 @@ ORG 0000H
 	ACALL DELAY
 	MOV P2, #90H
 	ACALL DELAY
+
 DELAY: MOV R5, #10
 	H1: MOV R4, #180
 	H2: MOV R3, #255
@@ -60,7 +62,6 @@ DELAY: MOV R5, #10
 ## Output:
 <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/7b093e0e-c4ca-4a59-b751-5a74fc55ecf3" />
 <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/59e2525d-0f08-4226-b7c6-ca8e99ccf0fa" />
-
 ## Result:
 The seven-segment display has been successfully interfaced with the 8051 microcontroller, and the digits 0 to 9 are displayed sequentially using Keil and Proteus.
 
