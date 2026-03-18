@@ -1,13 +1,10 @@
 # Seven-Segment-Display-Interfacing-Using-8051
-
 ## Aim:
 To interface a seven-segment display with the 8051 microcontroller and display digits 0 to 9 sequentially using an assembly language program in Keil and simulate it in Proteus.
-
 ## Apparatus Required:
 •	Laptop with Keil uVision software
 •	Proteus Design Suite
- 
-## Circuit Diagram Setup in Proteus:
+ ## Circuit Diagram Setup in Proteus:
 1.	Open Proteus and create a new project.
 2.	Add the following components from the library:
 o	8051 Microcontroller (AT89C51)
@@ -61,7 +58,6 @@ ORG 0000H
 	ACALL DELAY
 	MOV P2, #90H
 	ACALL DELAY
-
 DELAY: MOV R5, #10
 	H1: MOV R4, #180
 	H2: MOV R3, #255
